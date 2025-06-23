@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <Image src="/logo_1.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="dark:hidden" />
             <Image src="/logo.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="hidden dark:block" />            
-            <span className="text-xl font-bold">Dio's Digital Solutions</span>
+            <span className="text-xl font-bold">Dio&apos;s Digital Solutions</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
@@ -39,8 +39,8 @@ export default function Home() {
             <Link href="#services" className="text-sm font-medium transition-colors hover:text-primary">
               Services
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium transition-colors hover:text-primary">
-              Testimonials
+            <Link href="#faq" className="text-sm font-medium transition-colors hover:text-primary">
+              FAQ
             </Link>
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
               Contact
@@ -107,12 +107,12 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">My Journey</h3>
                 <p className="text-muted-foreground mb-4">
-                  Hi im Claudio, im a FSU graduate with over 4 years of experience in web development. I've worked on a diverse range of projects from
+                  Hi I&apos;m Claudio, I&apos;m a FSU graduate with over 4 years of experience in web development. I&apos;ve worked on a diverse range of projects from
                   small business websites to complex web applications. My journey began with a fascination for how the
                   internet works, and has evolved into a career building digital experiences.
                 </p>
                 <p className="text-muted-foreground">
-                  I'm constantly learning and adapting to new technologies and best practices to deliver the highest
+                  I&apos;m constantly learning and adapting to new technologies and best practices to deliver the highest
                   quality work for my clients.
                 </p>
               </div>
@@ -216,7 +216,7 @@ export default function Home() {
                 <div className="p-4">
                   <h3 className="text-xl font-bold">Kinderland Creator</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    An interactive children's e-book builder with text-to-speech, audio recording, and SCORM export capabilities for educational platforms.
+                    An interactive children&apos;s e-book builder with text-to-speech, audio recording, and SCORM export capabilities for educational platforms.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     <Badge variant="secondary">Vue.js</Badge>
@@ -334,9 +334,9 @@ export default function Home() {
                 <div className="rounded-full bg-primary/10 p-3">
                   <Laptop className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold">E-commerce Solutions</h3>
+                <h3 className="text-xl font-bold">SEO Optimization</h3>
                 <p className="text-center text-muted-foreground">
-                  Online stores with secure payment processing, inventory management, and customer accounts.
+                  Search engine optimization to improve your website&apos;s visibility, rankings, and organic traffic growth.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6">
@@ -352,88 +352,56 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
+        {/* FAQ Section */}
+        <section id="faq" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <Badge variant="outline" className="border-primary/20 text-primary">
-                  Testimonials
+                  FAQ
                 </Badge>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Client Feedback</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Frequently Asked Questions</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  What my clients say about working with me.
+                  Common questions about working with me and my development process.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
-              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm">
-                <div className="flex items-center gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <div className="h-10 w-10 rounded-full bg-muted" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold">Alex Thompson</h3>
-                    <p className="text-sm text-muted-foreground">CEO, TechStart</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <p className="italic text-muted-foreground">
-                    "Working with this developer was a game-changer for our business. They delivered a website that
-                    exceeded our expectations and has significantly increased our online conversions."
-                  </p>
-                </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">How long do projects typically take?</h3>
+                <p className="text-muted-foreground">
+                  Project timelines vary based on complexity. A simple landing page can take 1-2 days, while a full web application can take 4-6 weeks. I provide detailed timelines during our initial consultation and keep you updated throughout the process.
+                </p>
               </div>
-              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm">
-                <div className="flex items-center gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <div className="h-10 w-10 rounded-full bg-muted" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold">Sarah Johnson</h3>
-                    <p className="text-sm text-muted-foreground">Marketing Director, StyleBoutique</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <p className="italic text-muted-foreground">
-                    "Our e-commerce site has never looked or performed better. The attention to detail and focus on user
-                    experience has transformed our online presence."
-                  </p>
-                </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">What&apos;s your pricing structure?</h3>
+                <p className="text-muted-foreground">
+                  I offer both fixed-price projects and hourly rates depending on the scope. Simple websites start at $1,000, while complex applications are quoted based on requirements. I provide detailed proposals with transparent pricing before starting any work.
+                </p>
               </div>
-              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm">
-                <div className="flex items-center gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <div className="h-10 w-10 rounded-full bg-muted" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold">Michael Chen</h3>
-                    <p className="text-sm text-muted-foreground">Founder, FitnessPro</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <p className="italic text-muted-foreground">
-                    "The mobile app developed for our fitness brand has received outstanding feedback from our users.
-                    The developer was responsive, professional, and delivered on time."
-                  </p>
-                </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">How many revisions are included?</h3>
+                <p className="text-muted-foreground">
+                  I include unlimited rounds of revisions in all projects to ensure you&apos;re completely satisfied. I encourage feedback early and often to minimize the need for major changes later.
+                </p>
               </div>
-              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm">
-                <div className="flex items-center gap-4">
-                  <div className="rounded-full bg-primary/10 p-2">
-                    <div className="h-10 w-10 rounded-full bg-muted" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold">Emily Rodriguez</h3>
-                    <p className="text-sm text-muted-foreground">Owner, Creative Studio</p>
-                  </div>
-                </div>
-                <div className="mt-4">
-                  <p className="italic text-muted-foreground">
-                    "I've worked with many developers, but none have matched the level of creativity, technical skill,
-                    and communication that I experienced with this developer."
-                  </p>
-                </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">Which technologies do you recommend?</h3>
+                <p className="text-muted-foreground">
+                  I recommend technologies based on your specific needs. For most projects, I suggest React/Next.js for modern websites, Node.js for backends, and PostgreSQL for databases. I&apos;ll explain the pros and cons of different options during our consultation.
+                </p>
+              </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">Do you provide ongoing maintenance?</h3>
+                <p className="text-muted-foreground">
+                  Yes! I offer maintenance packages that include security updates, performance monitoring, content updates, and technical support. Maintenance can be monthly or on-demand, depending on your preferences and needs.
+                </p>
+              </div>
+              <div className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4">
+                <h3 className="text-lg font-bold">Can you work with my existing team?</h3>
+                <p className="text-muted-foreground">
+                  Absolutely! I collaborate well with designers, project managers, and other developers. I can integrate seamlessly into your existing workflow and use your preferred communication tools and project management systems.
+                </p>
               </div>
             </div>
           </div>
@@ -444,9 +412,9 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Let's Work Together</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Let&apos;s Work Together</h2>
                 <p className="max-w-[900px] text-primary-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Have a project in mind? Get in touch and let's create something amazing.
+                  Have a project in mind? Get in touch and let&apos;s create something amazing.
                 </p>
               </div>
             </div>
@@ -557,7 +525,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Image src="/logo_1.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="dark:hidden" />
               <Image src="/logo.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="hidden dark:block" />                    
-              <span className="text-xl font-bold">Dio's Digital Solutions</span>
+              <span className="text-xl font-bold">Dio&apos;s Digital Solutions</span>
             </div>
             <p className="text-sm text-muted-foreground">
             </p>
