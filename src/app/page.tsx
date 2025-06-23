@@ -1,8 +1,10 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ThemeToggle } from "@/components/theme-toggle"
+import Hero3DScene from "@/components/Hero3D"
 import {
   Code,
   Laptop,
@@ -23,7 +25,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Code className="h-6 w-6 text-primary" />
+            <Image src="/logo_1.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="dark:hidden" />
+            <Image src="/logo.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="hidden dark:block" />            
             <span className="text-xl font-bold">Dio's Digital Solutions</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -46,7 +49,7 @@ export default function Home() {
           <div>
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Button>Hire Me</Button>
+              <Button>Get Quote</Button>
             </div>
           </div>
         </div>
@@ -80,26 +83,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="relative h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-primary/0"></div>
-                  <div className="absolute inset-4 rounded-full bg-muted flex items-center justify-center overflow-hidden">
-                    <Image
-                      src="/placeholder.svg?height=500&width=500"
-                      alt="Developer Portrait"
-                      width={500}
-                      height={500}
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
-                  <div className="absolute -right-4 top-1/4 rounded-lg bg-background p-4 shadow-lg">
-                    <Code className="h-8 w-8 text-primary" />
-                  </div>
-                  <div className="absolute -left-4 top-1/2 rounded-lg bg-background p-4 shadow-lg">
-                    <Layout className="h-8 w-8 text-primary" />
-                  </div>
-                  <div className="absolute -bottom-4 left-1/3 rounded-lg bg-background p-4 shadow-lg">
-                    <Smartphone className="h-8 w-8 text-primary" />
-                  </div>
+                  <Hero3DScene />
                 </div>
               </div>
             </div>
@@ -114,10 +98,8 @@ export default function Home() {
                 <Badge variant="outline" className="border-primary/20 text-primary">
                   About Me
                 </Badge>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Who I Am</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">About Me</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a passionate web developer with expertise in creating modern, responsive websites and web
-                  applications.
                 </p>
               </div>
             </div>
@@ -125,9 +107,9 @@ export default function Home() {
               <div>
                 <h3 className="text-2xl font-bold mb-4">My Journey</h3>
                 <p className="text-muted-foreground mb-4">
-                  With over 5 years of experience in web development, I've worked on a diverse range of projects from
+                  Hi im Claudio, im a FSU graduate with over 4 years of experience in web development. I've worked on a diverse range of projects from
                   small business websites to complex web applications. My journey began with a fascination for how the
-                  web works, and has evolved into a career building digital experiences that users love.
+                  internet works, and has evolved into a career building digital experiences.
                 </p>
                 <p className="text-muted-foreground">
                   I'm constantly learning and adapting to new technologies and best practices to deliver the highest
@@ -207,6 +189,7 @@ export default function Home() {
                     <Badge variant="secondary">FastAPI</Badge>
                     <Badge variant="secondary">PostgreSQL</Badge>
                     <Badge variant="secondary">Redux</Badge>
+                    <Badge variant="secondary">Python</Badge>
                   </div>
                   <div className="mt-4 flex items-center gap-4">
                     <Link href="https://cineverse1.vercel.app/" target="_blank" className="text-sm font-medium text-primary hover:underline">
@@ -223,28 +206,29 @@ export default function Home() {
               <div className="group relative overflow-hidden rounded-lg border">
                 <div className="aspect-video overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="SaaS Dashboard"
+                    src="/project2.jpeg"
+                    alt="Kinderland Creator - Interactive E-book Builder"
                     width={600}
                     height={400}
                     className="object-cover transition-transform group-hover:scale-105"
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-xl font-bold">SaaS Dashboard</h3>
+                  <h3 className="text-xl font-bold">Kinderland Creator</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    An analytics dashboard for a software-as-a-service platform with real-time data visualization.
+                    An interactive children's e-book builder with text-to-speech, audio recording, and SCORM export capabilities for educational platforms.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <Badge variant="secondary">React</Badge>
-                    <Badge variant="secondary">D3.js</Badge>
-                    <Badge variant="secondary">Firebase</Badge>
+                    <Badge variant="secondary">Vue.js</Badge>
+                    <Badge variant="secondary">TTS API</Badge>
+                    <Badge variant="secondary">SCORM</Badge>
+                    <Badge variant="secondary">Audio Recording</Badge>
                   </div>
                   <div className="mt-4 flex items-center gap-4">
-                    <Link href="#" className="text-sm font-medium text-primary hover:underline">
+                    <Link href=" " className="text-sm font-medium text-primary hover:underline">
                       View Project
                     </Link>
-                    <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
+                    <Link href="https://github.com/Dio27073/Kinderland-Creator" target="_blank" className="text-sm font-medium text-muted-foreground hover:text-primary">
                       <Github className="h-4 w-4" />
                     </Link>
                   </div>
@@ -285,9 +269,11 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <Button variant="outline" size="lg">
-                View All Projects
-                <ExternalLink className="ml-2 h-4 w-4" />
+              <Button variant="outline" size="lg" asChild>
+                <Link href="https://github.com/Dio27073?tab=repositories" target="_blank">
+                  View All Projects
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -569,7 +555,8 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="flex items-center gap-2">
-              <Code className="h-6 w-6 text-primary" />
+              <Image src="/logo_1.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="dark:hidden" />
+              <Image src="/logo.png" alt="Dio's Digital Solutions Logo" width={24} height={24} className="hidden dark:block" />                    
               <span className="text-xl font-bold">Dio's Digital Solutions</span>
             </div>
             <p className="text-sm text-muted-foreground">
