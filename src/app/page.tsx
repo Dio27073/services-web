@@ -10,7 +10,6 @@ import {
   fadeInUp,
   fadeInLeft,
   fadeInRight,
-  staggerContainer,
   scaleOnHover,
   headerAnimation,
   logoHover,
@@ -150,7 +149,7 @@ export default function Home() {
                     { icon: Database, title: "Backend Development", description: "Node.js, Express, MongoDB, SQL" },
                     { icon: Layout, title: "UI/UX Design", description: "Figma, Responsive Design, Accessibility" },
                     { icon: Smartphone, title: "Mobile Development", description: "React Native, Progressive Web Apps" }
-                  ].map((skill, index) => (
+                  ].map((skill) => (
                     <motion.div key={skill.title} variants={fadeInUp} {...skillCardAnimation} className="rounded-lg border bg-card p-3 cursor-pointer">
                       <div className="flex items-center gap-2">
                         <skill.icon className="h-5 w-5 text-primary" />
@@ -317,7 +316,7 @@ export default function Home() {
                 { icon: Database, title: "Backend Development", description: "Robust server-side solutions, APIs, and database architecture to power your applications." },
                 { icon: Laptop, title: "SEO Optimization", description: "Search engine optimization to improve your website's visibility, rankings, and organic traffic growth." },
                 { icon: Code, title: "Website Maintenance", description: "Ongoing support, updates, and optimization to keep your website secure and performing at its best." }
-              ].map((service, index) => (
+              ].map((service) => (
                 <motion.div key={service.title} variants={fadeInUp} {...serviceCardAnimation} className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6 cursor-pointer">
                   <motion.div className="rounded-full bg-primary/10 p-3" {...serviceIconHover}>
                     <service.icon className="h-6 w-6 text-primary" />
@@ -352,7 +351,7 @@ export default function Home() {
                 { question: "Which technologies do you recommend?", answer: "I recommend technologies based on your specific needs. For most projects, I suggest React/Next.js for modern websites, Node.js for backends, and PostgreSQL for databases. I'll explain the pros and cons of different options during our consultation." },
                 { question: "Do you provide ongoing maintenance?", answer: "Yes! I offer maintenance packages that include security updates, performance monitoring, content updates, and technical support. Maintenance can be monthly or on-demand, depending on your preferences and needs." },
                 { question: "Can you work with my existing team?", answer: "Absolutely! I collaborate well with designers, project managers, and other developers. I can integrate seamlessly into your existing workflow and use your preferred communication tools and project management systems." }
-              ].map((faq, index) => (
+              ].map((faq) => (
                 <motion.div key={faq.question} variants={fadeInUp} {...faqCardAnimation} className="flex flex-col rounded-lg border bg-card p-6 shadow-sm space-y-4 cursor-pointer">
                   <h3 className="text-lg font-bold">{faq.question}</h3>
                   <p className="text-muted-foreground">{faq.answer}</p>
